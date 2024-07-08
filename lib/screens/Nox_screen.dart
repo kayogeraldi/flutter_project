@@ -20,8 +20,7 @@ class NoxScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
-            onPressed: () {}
-    )},
+            onPressed: () {},
             child: Text("NOx"),
           ),
         ],
