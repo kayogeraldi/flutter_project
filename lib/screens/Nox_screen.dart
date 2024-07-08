@@ -6,14 +6,25 @@ class NoxScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: ,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              textStyle: TextStyle(fontSize: 18),
+              backgroundColor: Colors.blue,
+              foregroundColor: Colors.white,
+              padding:
+              EdgeInsets.symmetric(horizontal: 113, vertical: 30),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            onPressed: () {}
+    )},
+            child: Text("NOx"),
+          ),
+        ],
       )
     );
   }
