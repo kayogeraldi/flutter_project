@@ -1,13 +1,7 @@
-import 'package:app_zh/screens/Nox_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
-import 'catalizador_screen.dart';
-
-class MenuScreen extends StatelessWidget {
-  //void selectImage() {} // funcao para escolher foto de perfil
-
-  const MenuScreen({super.key});
+class AgraleScreen extends StatelessWidget {
+  const AgraleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,38 +23,37 @@ class MenuScreen extends StatelessWidget {
                         backgroundColor: Colors.blue,
                         foregroundColor: Colors.white,
                         padding:
-                            EdgeInsets.symmetric(horizontal: 113, vertical: 30),
+                            EdgeInsets.symmetric(horizontal: 98, vertical: 30),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => NoxScreen()));
+
                       },
-                      child: Text("NOx"),
+                      child: Text("TENECO"),
                     ),
                     SizedBox(height: 16),
+
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         textStyle: TextStyle(fontSize: 18),
                         backgroundColor: Colors.blue,
                         foregroundColor: Colors.white,
                         padding:
-                            EdgeInsets.symmetric(horizontal: 73, vertical: 30),
+                        EdgeInsets.symmetric(horizontal: 50, vertical: 30),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => CatalizadorScreen()));
+
                       },
-                      child: Text("CATALIZADOR"),
+                      child: Text("DENOXTRNONIC 2.2"),
                     ),
                   ],
                 ),
-              ),
+              )
             ],
           ),
         ),

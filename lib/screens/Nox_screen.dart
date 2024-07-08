@@ -1,4 +1,13 @@
+import 'package:app_zh/screens/scania_nox_screen.dart';
+import 'package:app_zh/screens/volkswagem_nox_screen.dart';
+import 'package:app_zh/screens/volvo_nox_screen.dart';
 import 'package:flutter/material.dart';
+import 'agrale_nox_screen.dart';
+import 'daf_nox_screen.dart';
+import 'ford_nox_screen.dart';
+import 'iveco_nox_screen.dart';
+import 'man_nox_screen.dart';
+import 'mercedes_nox_screen.dart';
 
 class NoxScreen extends StatelessWidget {
   const NoxScreen({super.key});
@@ -32,11 +41,13 @@ class NoxScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => AgraleScreen()));
+                          },
                           child: Text("AGRALE"),
                         ),
                         SizedBox(height: 5),
-
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             textStyle: TextStyle(fontSize: 18),
@@ -48,11 +59,13 @@ class NoxScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => DafNoxScreen()));
+                          },
                           child: Text("DAF"),
                         ),
                         SizedBox(height: 5),
-
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             textStyle: TextStyle(fontSize: 18),
@@ -64,11 +77,13 @@ class NoxScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => FordNoxScreen()));
+                          },
                           child: Text("FORD"),
                         ),
                         SizedBox(height: 5),
-
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             textStyle: TextStyle(fontSize: 18),
@@ -80,11 +95,12 @@ class NoxScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => IvecoNoxScreen()));
+                          },
                           child: Text("IVECO"),
                         ),
                         SizedBox(height: 5),
-
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             textStyle: TextStyle(fontSize: 18),
@@ -96,11 +112,12 @@ class NoxScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => ManNoxScreen()));
+                          },
                           child: Text("MAN"),
                         ),
                         SizedBox(height: 5),
-
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             textStyle: TextStyle(fontSize: 18),
@@ -112,11 +129,12 @@ class NoxScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => MercedesNoxScreen()));
+                          },
                           child: Text("MERCEDES"),
                         ),
                         SizedBox(height: 5),
-
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             textStyle: TextStyle(fontSize: 18),
@@ -128,12 +146,12 @@ class NoxScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => VolvoNoxScreen()));
+                          },
                           child: Text("VOLVO"),
                         ),
                         SizedBox(height: 5),
-
-
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             textStyle: TextStyle(fontSize: 18),
@@ -145,11 +163,12 @@ class NoxScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => VolkswagemNoxScreen()));
+                          },
                           child: Text("VOLKSWAGEM"),
                         ),
                         SizedBox(height: 5),
-
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             textStyle: TextStyle(fontSize: 18),
@@ -161,12 +180,12 @@ class NoxScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => ScaniaNoxScreen()));
+                          },
                           child: Text("SCANIA"),
                         ),
                         SizedBox(height: 5),
-
-
                       ],
                     ),
                   ),
