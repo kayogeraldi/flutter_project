@@ -9,7 +9,7 @@ class CatalizadorScreen extends StatelessWidget {
       body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          Text("PG Catalizador")
+          Text("PG Catalizaddddddddd")
       ],
       ),
     );
