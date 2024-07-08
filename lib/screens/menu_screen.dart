@@ -5,7 +5,7 @@ import 'package:flutter/rendering.dart';
 import 'catalizador_screen.dart';
 
 class MenuScreen extends StatelessWidget {
-  void selectImage() {} // funcao para escolher foto de perfil
+  //void selectImage() {} // funcao para escolher foto de perfil
 
   const MenuScreen({super.key});
 
