@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PerfilScreen extends StatelessWidget {
-  const PerfilScreen({super.key});
+  const PerfilScreen({Key? key}) : super(key: key); // Corrigido o parâmetro super.key
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +16,8 @@ class PerfilScreen extends StatelessWidget {
               Stack(
                 children: [
                   CircleAvatar(
-                    radius: 64,
-                    backgroundImage: NetworkImage(
-                        'https://t4.ftcdn.net/jpg/05/49/98/39/360_F_549983970_bRCkYfk0P6PP5fKbMhZMIb07mCJ6esXL.jpg'),
+                    radius: 74,
+                    backgroundImage: AssetImage("assets/images/avatar.jpg"), // Corrigido o atributo child para backgroundImage
                   ),
                   Positioned(
                     child: IconButton(
@@ -27,7 +26,7 @@ class PerfilScreen extends StatelessWidget {
                     ),
                     bottom: -15,
                     left: 90,
-                  )
+                  ),
                 ],
               ),
               SizedBox(height: 40),
@@ -54,12 +53,11 @@ class PerfilScreen extends StatelessWidget {
                     TextField(
                       decoration: InputDecoration(hintText: 'SEÇÃO 4'),
                     ),
-                  SizedBox(height: 16),
+                    SizedBox(height: 16),
                     TextField(
                       decoration: InputDecoration(hintText: 'SEÇÃO 5'),
                     ),
                     SizedBox(height: 30),
-
                   ],
                 ),
               ),
